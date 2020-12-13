@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+#não trocar o Title do ambiente develop pro master
+index.html
+
 # dependencies
 /node_modules
 /.pnp
