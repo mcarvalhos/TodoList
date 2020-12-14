@@ -38,15 +38,15 @@ function TodoList() {
     setTodos(updatedTodos);
   }
 
-  // useEffect(() => {
-  //   const items = JSON.parse(localStorage.getItem('tasks'));
-  //   if (items) {
-  //     setTodos(items);
-  //   }
-  // })
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem('todos'));
+    if (items) {
+      setTodos(items);
+    }
+  }, [])
 
   useEffect(() => {
-    localStorage.setItem('tasks', JSON.stringify(todos))
+    localStorage.setItem('todos', JSON.stringify(todos))
   }, [todos])
 
   return (
