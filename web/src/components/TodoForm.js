@@ -1,27 +1,27 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from "react";
 
 function TodoForm(props) {
-  const [input, setInput] = useState(props.edit ? props.edit.value : '');
+  const [input, setInput] = useState(props.edit ? props.edit.value : "");
 
   const inputRef = useRef(null);
 
   useEffect(() => {
     inputRef.current.focus();
-  })
+  });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setInput(e.target.value);
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
-      text: input
+      text: input,
     });
 
-    setInput('')
+    setInput("");
   };
 
   return (
@@ -42,29 +42,25 @@ function TodoForm(props) {
           />
           <button className="todo-button edit">Atualizar</button>
         </>
-      ) :
-
-        (
-          <>
-            <input
-              type="text"
-              placeholder="Digite aqui..."
-              value={input}
-              name="text"
-              className="todo-input"
-              autoComplete="off"
-              minLength="3"
-              maxLength="300"
-              onChange={handleChange}
-              ref={inputRef}
-            />
-            <button className="todo-button">Adicionar</button>
-          </>
-        )
-      }
+      ) : (
+        <>
+          <input
+            type="text"
+            placeholder="Digite aqui..."
+            value={input}
+            name="text"
+            className="todo-input"
+            autoComplete="off"
+            minLength="3"
+            maxLength="300"
+            onChange={handleChange}
+            ref={inputRef}
+          />
+          <button className="todo-button">Adicionar</button>
+        </>
+      )}
     </form>
-  )
+  );
 }
 
-export default TodoForm
-
+export default TodoForm;

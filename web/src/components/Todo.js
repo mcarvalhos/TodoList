@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import TodoForm from './TodoForm';
-import { FiEdit, FiXCircle } from 'react-icons/fi';
+import React, { useState } from "react";
+import TodoForm from "./TodoForm";
+import { FiEdit, FiXCircle } from "react-icons/fi";
 
 const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   const [edit, setEdit] = useState({
     id: null,
-    value: ''
+    value: "",
   });
 
-  const submitUpdate = value => {
+  const submitUpdate = (value) => {
     updateTodo(edit.id, value);
     setEdit({
       id: null,
-      value: ''
+      value: "",
     });
   };
 
@@ -22,20 +22,20 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
 
   return todos.map((todo, index) => (
     <div
-      className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
+      className={todo.isComplete ? "todo-row complete" : "todo-row"}
       key={index}
     >
       <div key={todo.id} onClick={() => completeTodo(todo.id)}>
         {todo.text}
       </div>
-      <div className='icons'>
+      <div className="icons">
         <FiEdit
           onClick={() => setEdit({ id: todo.id, value: todo.text })}
-          className='edit-icon'
+          className="edit-icon"
         />
         <FiXCircle
           onClick={() => removeTodo(todo.id)}
-          className='delete-icon'
+          className="delete-icon"
         />
       </div>
     </div>
