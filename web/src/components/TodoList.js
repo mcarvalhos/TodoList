@@ -60,16 +60,17 @@ function TodoList() {
         removeTodo={removeTodo}
         updateTodo={updateTodo}
       />
-
+      {/* 
       <div>
         <h1>
           Todos restantes:
           {todos.filter((todo) => !todo.completeTodo).length}
         </h1>
-        {/* <button className="button">todos</button>
+        <button className="button">todos</button>
         <button className="button">Ativos</button>
-        <button className="button">Completos</button> */}
+        <button className="button">Completos</button> 
       </div>
+      */}
     </div>
   );
 }
