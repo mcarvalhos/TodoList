@@ -141,7 +141,7 @@ h1 {
 .todo-container {
   display: flex;
   flex-direction: row;
-  position: relative;
+  /* position: relative; */
 }
 
 .todo-row {
