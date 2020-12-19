@@ -18,7 +18,7 @@
 <br>
 
 <p align="center">
-  <img alt="Todo List" src=".github/todo-list.png" width="100%">
+  <img alt="Todo List" src=".github/todo-list.svg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
