@@ -40,10 +40,7 @@ No link abaixo você encontra o layout do projeto web. Lembrando que você preci
 
 - [Layout Web](https://www.figma.com/file/WuD315aTHGGGjKMa1sc3Xd/TODO-List)
 
-<!-- ## :memo: Licença
+## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes. -->
-
----
-
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes. 
 Feito com 💜 by Murilo Carvalho
