@@ -24,11 +24,11 @@
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
-
+- [Yarn](https://yarnpkg.com/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
-- [Hooks]
-- [JavaScript](https://www.typescriptlang.org/)
+- [Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)
+- [JavaScript](https://www.javascript.com/)
 
 ## 💻 Projeto
 
