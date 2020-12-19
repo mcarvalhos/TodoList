@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Todo List é uma aplicação para listar suas tarefas diárias para que possa realizar controle e planejamento.
+O Todo List é uma aplicação para listar suas tarefas diárias e possa realizar controle e planejamento.
 
 ## 🔖 Layout
 
